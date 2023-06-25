@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>xplarix</title>
+    <link rel="stylesheet" href="web.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <header class="navbar">
+      <nav>
+        <div class="logo">
+          <img src="razor.png" alt="" />
+          <span class="logo">xplarix</span>
+        </div>
+        <!-- <div class="logo">Brand</div> -->
+        <!-- toggle menu button -->
+        <span class="menubtn" onclick="openNav()">&#9776;</span>
+
+        <div class="navLinks">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <a href="login.html"><button type="button">Login</button></a>
+          </ul>
+        </div>
+      </nav>
+      <!-- responsive side navbar -->
+      <div class="sideNav" id="sidenav">
+        <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <a href="login.html"
+          ><button type="button" class="button">Login</button></a
+        >
+      </div>
+    </header>
+
+    <div class="container">
+      <p>
+        We create <span class="typed-text"></span
+        ><span class="cursor">&nbsp;</span>
+      </p>
+      <img src="" alt="" />
+    </div>
+  </body>
+  <script>
+    function openNav() {
+      document.getElementById("sidenav").style.width = "50%";
+    }
+    function closeNav() {
+      document.getElementById("sidenav").style.width = "0%";
+    }
+  </script>
+  <script src="web.js"></script>
+</html>
